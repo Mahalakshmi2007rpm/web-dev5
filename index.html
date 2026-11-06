@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Morrow makes considered objects for slower, better everyday rituals.">
+    <meta name="theme-color" content="#f6f5f0">
+    <title>Morrow | Considered objects for everyday rituals</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <a class="logo" href="#/" aria-label="Morrow home">morrow<span>.</span></a>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#/shop">Shop</a><a href="#/story">Our story</a><a href="#/journal">Journal</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" id="search-button" type="button" aria-label="Open product search">⌕</button>
+          <button class="cart-button" id="cart-button" type="button" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button>
+        </div>
+      </div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="drawer-header"><h2>Your bag</h2><button class="close-button" id="close-cart" type="button" aria-label="Close shopping bag">×</button></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><p>Your bag is waiting.</p><a href="#/shop" id="cart-shop-link">Explore the collection</a></div>
+      <div class="cart-summary" id="cart-summary"><div><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><button class="checkout-button" id="checkout-button" type="button">Checkout</button><small>Shipping and taxes calculated at checkout.</small></div>
+    </aside>
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <footer class="site-footer"><div class="container footer-inner"><p>Objects for a slower, better everyday.</p><nav aria-label="Footer navigation"><a href="#/story">About Morrow</a><a href="mailto:hello@morrow.example">Contact</a><a href="#/shipping">Shipping & returns</a></nav><p>© 2025 Morrow Studio</p></div></footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
